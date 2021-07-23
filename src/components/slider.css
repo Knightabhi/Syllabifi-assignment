@@ -1,0 +1,28 @@
+.dots {
+  align-self: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.dots li {
+  margin-right: 6px;
+}
+.dots li:before {
+  content: "";
+  height: 12px;
+  width: 12px;
+  display: inline-block;
+  background: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 1px solid #8759f2;
+  transition: all 300ms ease;
+}
+.dots li.active:before {
+  width: 40px;
+  background: #443663;
+}
+.dots li.done:before {
+  background: #00ba88;
+}
