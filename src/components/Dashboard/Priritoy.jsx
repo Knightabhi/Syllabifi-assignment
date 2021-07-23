@@ -19,7 +19,9 @@ const useStyles = makeStyles((theme) => ({
   },
   compt: {
     verticalAlign: "middle",
-    transform: "translateX(-4.5vw)",
+  },
+  img: {
+    transform: "translate(15px,-35px)",
   },
 }));
 
@@ -30,15 +32,18 @@ function Prio() {
       <Row>
         <Col className={`${classes.comp} text-start `}>
           <img src={Pri} />
-          <RiFilePaper2Fill />
+          <div className={classes.img}>
+            <RiFilePaper2Fill />
+          </div>
         </Col>
       </Row>
-      <Row className={`${classes.compt} text-start `}>
+      <Row className={`${classes.compt} text-start  mb-2 `}>
         <Typography variant="h5" component="h5">
           See What’s on priority?
         </Typography>
       </Row>
-      <Row className={classes.comp}>
+      <br />
+      <Row className={`${classes.comp} text-start`}>
         <Typography variant="caption">
           Complete 12 rejected questions to earn ₹ 30/q
         </Typography>
